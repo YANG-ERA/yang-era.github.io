@@ -1,18 +1,10 @@
 # Authors
 
-Name Name:
-  name        : "Name Name"
-  uri         : "https://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
-
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+Jiyuan Yang:
+  name        : "Jiyuan Yang"
+  uri         : "https://yang-era.github.io"
+  email       : "jiyuanyang@sjtu.edu.cn"
+  bio         : "Ph.D. student in Statistics at Shanghai Jiao Tong University"
+  avatar      : "profile.png"
+  googlescholar: "https://scholar.google.com.hk/citations?user=6pwvcLMAAAAJ&hl=zh-CN"
+  github      : "YANG-ERA"
