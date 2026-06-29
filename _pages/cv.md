@@ -11,54 +11,46 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **Shanghai Jiao Tong University**, School of Mathematical Sciences<br>
+  Ph.D. student in Statistics, Sept. 2025 - Present<br>
+  Co-advisors: Prof. Lin Liu and Prof. Xiaoqi Zheng
 
-Work experience
+* **Shanghai Normal University**, College of Mathematics and Science<br>
+  M.S. in Probability and Statistics, Sept. 2021 - June 2024
+
+Research Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **Research Assistant**, Center for Single-Cell Omics, SJTU School of Medicine, 2024 - 2025<br>
+  Advisor: Prof. Xiaoqi Zheng<br>
+  Statistical method development and computational analysis for single-cell and spatial omics data.
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+Research Interests
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Spatial transcriptomics
+* High-dimensional omics data analysis
+* Dimension reduction and clustering
+* Simulation and benchmarking
+* Statistical learning for biomedical data
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+<ul>{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
+
+Selected Honors and Awards
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
+* Shanghai Outstanding Graduate.
+* National Encouragement Scholarship, 3 times.
+* Graduate Academic Scholarship, Second Class, 2 times.
+* National Undergraduate Mathematics Competition, Jiangxi Provincial First Prize.
+* National Graduate/Undergraduate Mathematical Contest in Modeling: National First Prize, National Second Prize, National Third Prize, and Provincial First Prize.
+* National College Student Data Mining Competition: National First Prize and two National Second Prizes.
+* Mathematical Contest in Modeling: Meritorious Winner and Successful Participant.
+* Jiangxi Market Survey and Analysis Competition, Provincial First Prize.
+
+Links
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* [Google Scholar](https://scholar.google.com.hk/citations?user=6pwvcLMAAAAJ&hl=zh-CN)
+* [GitHub](https://github.com/YANG-ERA)
+* [ORCID](https://orcid.org/0000-0001-7709-6088)

@@ -2,49 +2,63 @@
 permalink: /
 title: "Home"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-I am a Ph.D. student in Statistics at Shanghai Jiao Tong University (SJTU), starting in September 2025. I am fortunate to be co-advised by Prof. Lin Liu and Prof. Xiaoqi Zheng. My primary research focuses on developing rigorous statistical frameworks and computational algorithms to decode complex biological systems, with a particular emphasis on spatial transcriptomics.
+I am a first-year Ph.D. student in Statistics at the School of Mathematical Sciences, Shanghai Jiao Tong University. I am fortunate to be co-advised by Prof. Lin Liu and Prof. Xiaoqi Zheng.
 
-Prior to my doctoral studies, I spent a year working as a Research Assistant under the supervision of Prof. Xiaoqi Zheng at the Center for Single-Cell Omics, SJTU School of Medicine. I received my Master's degree in Probability and Statistics from Shanghai Normal University in 2024.
+My research lies at the intersection of statistics, bioinformatics, and computational biology. I develop statistical models and efficient algorithms for high-dimensional omics data, with a particular focus on spatial transcriptomics. I am especially interested in interpretable dimension reduction, spatial domain detection, simulation and benchmarking, and spatially variable gene detection.
 
-My long-term research goal is to bridge the gap between biostatistics and bioinformatics, creating scalable and interpretable methods to leverage high-dimensional omics data for biomedical discovery.
+Before starting my Ph.D., I worked as a Research Assistant at the Center for Single-Cell Omics, SJTU School of Medicine, under the supervision of Prof. Xiaoqi Zheng. I received my M.S. in Probability and Statistics from Shanghai Normal University in 2024.
 
 ## Research Interests
-Spatial Transcriptomics: Developing computational methods to identify spatial domains and integrate multi-omics data.
 
-Biostatistics: Statistical modeling, causal inference, and algorithm optimization for high-dimensional biological data.
-
-
+* **Spatial transcriptomics:** statistical and computational methods for spatial domains, spatially variable genes, and tissue organization.
+* **High-dimensional omics:** scalable, interpretable methods for single-cell and spatial multi-omics data.
+* **Statistical learning:** dimension reduction, clustering, ensemble learning, simulation, and benchmarking for biomedical data analysis.
 
 ## Education
-Shanghai Jiao Tong University (SJTU) | Sept. 2025 – Present
 
-Ph.D. in Statistics, School of Mathematical Sciences
+* **Shanghai Jiao Tong University**, School of Mathematical Sciences<br>
+  Ph.D. student in Statistics, Sept. 2025 - Present<br>
+  Co-advisors: Prof. Lin Liu and Prof. Xiaoqi Zheng
 
-Co-Advisors: Tenured Assoc. Prof. Lin Liu & Prof. Xiaoqi Zheng
+* **Shanghai Normal University**, College of Mathematics and Science<br>
+  M.S. in Probability and Statistics, Sept. 2021 - June 2024
 
-Shanghai Normal University (SHNU) | Sept. 2021 - June. 2024
+## Research Experience
 
-M.S. in Probability and Statistics, College of Mathematics and Science
+* **Center for Single-Cell Omics, SJTU School of Medicine**<br>
+  Research Assistant, 2024 - 2025<br>
+  Advisor: Prof. Xiaoqi Zheng<br>
+  Statistical method development and computational analysis for single-cell and spatial omics data.
 
-## Experience
-Center for Single-Cell Omics, SJTU School of Medicine | 2024 – 2025
+## Selected Publications
 
-Research Assistant
+* **GraphPCA**: interpretable dimension reduction for spatial transcriptomics data, published in *Genome Biology*.
+* **Spider**: a flexible simulation framework for spatial transcriptomics data, published in *Bioinformatics*.
+* **STCC**: consensus clustering for spatial domain detection, published in *Genome Research*.
+* **Castl**: ensemble-based identification of spatially variable genes, published in *Briefings in Bioinformatics*.
 
-Advisor: Prof. Xiaoqi Zheng
+Please see the [Publications](/publications/) page for details.
 
-Focus: Algorithmic development and statistical analysis for single-cell and spatial omics data.
+## Selected Honors and Awards
+
+* Shanghai Outstanding Graduate.
+* National Encouragement Scholarship, 3 times.
+* Graduate Academic Scholarship, Second Class, 2 times.
+* National Undergraduate Mathematics Competition, Jiangxi Provincial First Prize.
+* National Graduate/Undergraduate Mathematical Contest in Modeling: National First Prize, National Second Prize, National Third Prize, and Provincial First Prize.
+* National College Student Data Mining Competition: National First Prize and two National Second Prizes.
+* Mathematical Contest in Modeling: Meritorious Winner and Successful Participant.
+* Jiangxi Market Survey and Analysis Competition, Provincial First Prize.
 
 ## News
-[Sept. 2025] I started my Ph.D. journey at the School of Mathematical Sciences, SJTU!
 
-[June. 2024] Graduated with my Master's degree from Shanghai Normal University and joined SJTU School of Medicine as a Research Assistant.
-
-
-
-
+* **Mar. 2026:** Castl was published in *Briefings in Bioinformatics*.
+* **Jan. 2026:** Spider was published in *Bioinformatics*.
+* **Sept. 2025:** I started my Ph.D. in Statistics at Shanghai Jiao Tong University.
+* **June 2025:** STCC was published in *Genome Research*.
+* **Nov. 2024:** GraphPCA was published in *Genome Biology*.
