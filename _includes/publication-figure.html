@@ -4,8 +4,10 @@
   <figure class="publication-figure" itemscope itemtype="https://schema.org/ImageObject">
     <meta itemprop="creditText" content="{{ figure.credit | escape }}">
     <link itemprop="license" href="{{ figure.license_url }}">
-    <a itemprop="isBasedOn" href="{{ include.paper.paperurl }}" aria-label="View source: {{ figure.caption | escape }}">
-      <img itemprop="contentUrl" src="{{ figure_url }}" alt="{{ figure.alt | escape }}" width="{{ figure.width }}" height="{{ figure.height }}" loading="lazy" decoding="async">
+    <link itemprop="isBasedOn" href="{{ include.paper.paperurl }}">
+    {% assign figure_alt = include.alt | default: figure.alt %}
+    <a href="{{ figure_url }}" aria-label="{% if page.lang == "zh-CN" %}查看大图：{{ figure_alt | escape }}{% else %}View full-size image: {{ figure.caption | escape }}{% endif %}">
+      <img itemprop="contentUrl" src="{{ figure_url }}" alt="{{ figure_alt | escape }}" width="{{ figure.width }}" height="{{ figure.height }}" loading="lazy" decoding="async">
     </a>
   </figure>
 {% endif %}

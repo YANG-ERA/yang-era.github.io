@@ -3,9 +3,18 @@ layout: compress
 ---
 
 {% include base_path %}
+{% assign page_lang = page.lang | default: "en" %}
+{% assign page_locale = page.lang | default: site.locale %}
+{% assign language_en = page.english_url | default: page.url %}
+{% if page_lang == "zh-CN" %}
+  {% assign language_zh = page.url %}
+{% else %}
+  {% assign translated_page = site.pages | where: "english_url", page.url | first %}
+  {% assign language_zh = translated_page.url %}
+{% endif %}
 
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
+<html lang="{{ page_lang }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
   <head>
     {% include head.html %}
     {% include head/custom.html %}

@@ -10,6 +10,7 @@ The site is based on the Academic Pages Jekyll template and is maintained as a c
 * `_pages/publications.html`: publication list rendered from `_publications/`.
 * `_pages/cv.md`: short academic CV.
 * `_publications/`: publication metadata and links.
+* `_pages/zh/`: Simplified Chinese pages. Each page's `english_url` pairs it with its English counterpart. Translated paper pages reuse the metadata and images from `_publications/`.
 * `_config.yml`: site metadata, author profile, and collection settings.
 
 ## Local Preview

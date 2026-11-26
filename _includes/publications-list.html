@@ -1,0 +1,19 @@
+{% if site.author.googlescholar %}
+  <div class="wordwrap">{% if page.lang == "zh-CN" %}也可在 <a href="{{ site.author.googlescholar }}">Google 学术主页</a>查看我的论文。{% else %}You can also find my publications on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.{% endif %}</div>
+{% endif %}
+
+{% if site.publication_category %}
+  {% for category in site.publication_category %}
+    {% assign category_papers = site.publications | where: "category", category[0] %}
+    {% if category_papers.size > 0 %}
+      <h2 class="publications__heading">{% if page.lang == "zh-CN" %}{{ category[1].title_zh | default: category[1].title }}{% else %}{{ category[1].title }}{% endif %}</h2>
+      {% for post in category_papers reversed %}
+        {% include publication-entry.html paper=post %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+{% else %}
+  {% for post in site.publications reversed %}
+    {% include publication-entry.html paper=post %}
+  {% endfor %}
+{% endif %}

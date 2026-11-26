@@ -1,13 +1,15 @@
 {% assign paper = include.paper %}
+{% assign localized_paper = paper %}
+{% if page.lang == "zh-CN" %}
+  {% assign translated_paper = site.pages | where: "english_url", paper.url | first %}
+  {% assign localized_paper = translated_paper | default: paper %}
+{% endif %}
 <article class="publication-entry{% if paper.figure %} publication-entry--illustrated{% endif %}">
   <div class="publication-entry__text">
-    <h3 class="publication-entry__title"><a href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a></h3>
-    {% assign publication_year = paper.date | date: "%Y" %}
-    <p class="publication-entry__venue">
-      <cite>{{ paper.venue | escape }}</cite> &middot; {{ paper.year | default: publication_year }}{% if paper.role %} &middot; <strong>{{ paper.role | escape }}</strong>{% endif %}
-    </p>
-    <p>{{ paper.excerpt | escape }}</p>
+    <h3 class="publication-entry__title"><a href="{{ localized_paper.url | relative_url }}">{{ localized_paper.title | escape }}</a></h3>
+    <p class="publication-entry__venue">{% include publication-meta.html paper=paper %}</p>
+    <p>{{ localized_paper.excerpt | escape }}</p>
     {% include publication-links.html paper=paper %}
   </div>
-  {% include publication-figure.html paper=paper %}
+  {% include publication-figure.html paper=paper alt=localized_paper.figure_alt %}
 </article>

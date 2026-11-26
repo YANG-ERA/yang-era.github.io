@@ -298,6 +298,9 @@ zh: &DEFAULT_ZH
   powered_by                 : "技术支持："
   website_label              : "网站"
   email_label                : "电子邮件"
+  publication_roles:
+    "First author": "第一作者"
+    "Co-first author": "共同第一作者"
   recent_posts               : "最新文章"
   site_map                   :
   undefined_wpm              : "_config.yml中未定义words_per_minute参数"

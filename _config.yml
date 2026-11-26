@@ -27,8 +27,11 @@ author:
   name             : "Jiyuan Yang"
   pronouns         : # example: "she/her"  
   bio              : "Second-year Ph.D. student in Statistics, SJTU"
+  bio_zh           : "上海交通大学统计学博士生（二年级）"
   location         : "Shanghai, China"
+  location_zh      : "中国上海"
   employer         : "School of Mathematical Sciences, Shanghai Jiao Tong University"
+  employer_zh      : "上海交通大学数学科学学院"
   uri              : # URL
   email            : "jiyuanyang@sjtu.edu.cn" 
 
@@ -86,8 +89,10 @@ author:
 publication_category:
   manuscripts:
     title: 'Journal Articles'
+    title_zh: '期刊论文'
   preprints:
     title: 'Preprints'
+    title_zh: '预印本'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews

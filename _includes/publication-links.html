@@ -1,4 +1,4 @@
 <p class="publication-links">
-  <a href="{{ include.paper.paperurl }}">Paper</a>
-  {% if include.paper.codeurl %}<a href="{{ include.paper.codeurl }}">Code</a>{% endif %}
+  <a href="{{ include.paper.paperurl }}">{% if page.lang == "zh-CN" %}论文{% else %}Paper{% endif %}</a>
+  {% if include.paper.codeurl %}<a href="{{ include.paper.codeurl }}">{% if page.lang == "zh-CN" %}代码{% else %}Code{% endif %}</a>{% endif %}
 </p>

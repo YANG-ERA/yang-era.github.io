@@ -1,0 +1,6 @@
+{% assign publication_year = include.paper.date | date: "%Y" %}
+{% assign publication_role = include.paper.role %}
+{% if page.lang == "zh-CN" %}
+  {% assign publication_role = site.data.ui-text[page.lang].publication_roles[include.paper.role] | default: include.paper.role %}
+{% endif %}
+<cite>{{ include.paper.venue | escape }}</cite>{% if include.cv %} ({{ include.paper.year | default: publication_year }}){% else %} &middot; {{ include.paper.year | default: publication_year }}{% endif %}{% if publication_role %} &middot; {% if include.cv %}{{ publication_role | escape }}{% else %}<strong>{{ publication_role | escape }}</strong>{% endif %}{% endif %}
