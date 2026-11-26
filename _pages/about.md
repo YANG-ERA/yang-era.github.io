@@ -58,7 +58,7 @@ Please see the [Publications](/publications/) page for details.
 
 ## News
 
-* **Oct. 30, 2026:** CellPatch was published in *Genome Biology*.
+* **Oct. 2026:** CellPatch was published in *Genome Biology*.
 * **Oct. 2026:** I successfully defended my Ph.D. research proposal.
 * **May 2026:** I passed my Ph.D. qualifying examination.
 * **Mar. 2026:** Castl was published in *Briefings in Bioinformatics*.

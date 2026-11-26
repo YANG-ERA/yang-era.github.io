@@ -28,14 +28,3 @@ author_profile: true
     {% include publication-entry.html paper=post %}
   {% endfor %}
 {% endif %}
-
-<details id="figure-credits">
-  <summary>Figure credits</summary>
-  <ul>
-    {% for paper in site.publications reversed %}
-      {% if paper.figure %}
-        <li>{{ paper.figure.caption | escape }}: <a href="{{ paper.paperurl }}">{{ paper.figure.credit | escape }}</a> &middot; <a href="{{ paper.figure.license_url }}">{{ paper.figure.license | escape }}</a></li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-</details>
