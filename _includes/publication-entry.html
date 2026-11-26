@@ -1,0 +1,16 @@
+{% assign paper = include.paper %}
+<article class="publication-entry{% if paper.figure %} publication-entry--illustrated{% endif %}">
+  <div class="publication-entry__text">
+    <h3 class="publication-entry__title"><a href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a></h3>
+    {% assign publication_year = paper.date | date: "%Y" %}
+    <p class="publication-entry__venue">
+      <cite>{{ paper.venue | escape }}</cite> &middot; {{ paper.year | default: publication_year }}{% if paper.role %} &middot; <strong>{{ paper.role | escape }}</strong>{% endif %}
+    </p>
+    <p>{{ paper.excerpt | escape }}</p>
+    {% if paper.contribution %}
+      <p><strong>My contribution:</strong> {{ paper.contribution | escape }}</p>
+    {% endif %}
+    {% include publication-links.html paper=paper %}
+  </div>
+  {% include publication-figure.html paper=paper %}
+</article>

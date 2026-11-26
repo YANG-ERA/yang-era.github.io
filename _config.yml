@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Jiyuan Yang"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. student in Statistics, SJTU"
+  bio              : "Second-year Ph.D. student in Statistics, SJTU"
   location         : "Shanghai, China"
   employer         : "School of Mathematical Sciences, Shanghai Jiao Tong University"
   uri              : # URL
@@ -188,6 +188,8 @@ exclude:
   - package.json*
   - Rakefile
   - README
+  - PROGRESS.md
+  - scratch
   - tmp
   - vendor
 keep_files:

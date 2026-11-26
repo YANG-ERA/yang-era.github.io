@@ -13,7 +13,8 @@ Education
 ======
 * **Shanghai Jiao Tong University**, School of Mathematical Sciences<br>
   Ph.D. student in Statistics, Sept. 2025 - Present<br>
-  Co-advisors: Prof. Lin Liu and Prof. Xiaoqi Zheng
+  Co-advisors: Prof. Lin Liu and Prof. Xiaoqi Zheng<br>
+  Qualifying examination passed in May 2026; research proposal defense passed in Oct. 2026.
 
 * **Shanghai Normal University**, College of Mathematics and Science<br>
   M.S. in Probability and Statistics, Sept. 2021 - June 2024

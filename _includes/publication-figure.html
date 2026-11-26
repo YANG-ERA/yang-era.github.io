@@ -1,0 +1,13 @@
+{% assign figure = include.paper.figure %}
+{% if figure %}
+  {% assign figure_url = figure.path | relative_url %}
+  <figure class="publication-figure">
+    <a href="{{ figure_url }}" aria-label="View full figure: {{ figure.caption | escape }}">
+      <img src="{{ figure_url }}" alt="{{ figure.alt | escape }}" width="{{ figure.width }}" height="{{ figure.height }}" loading="lazy" decoding="async">
+    </a>
+    <figcaption>
+      <span>{{ figure.caption | escape }}</span>
+      <span><a href="{{ include.paper.paperurl }}">{{ figure.credit | escape }}</a> &middot; <a href="{{ figure.license_url }}">{{ figure.license | escape }}</a></span>
+    </figcaption>
+  </figure>
+{% endif %}

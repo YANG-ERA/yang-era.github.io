@@ -36,7 +36,10 @@
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
-    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
+    {% if post.venue %}
+      {% assign publication_year = post.date | date: "%Y" %}
+      <p class="archive__item-excerpt" itemprop="description">{{ post.authors | escape }}<br><cite>{{ post.venue | escape }}</cite> ({{ post.year | default: publication_year }}){% if post.role %} &middot; {{ post.role | escape }}{% endif %}</p>
+    {% endif %}
     </li>
  </article>
 </div>

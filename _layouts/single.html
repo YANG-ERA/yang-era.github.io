@@ -36,6 +36,10 @@ layout: default
         
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif page.collection == 'publications' %}
+          {% assign publication_year = page.date | date: "%Y" %}
+          <p><cite>{{ page.venue | escape }}</cite> &middot; {{ page.year | default: publication_year }}{% if page.role %} &middot; <strong>{{ page.role | escape }}</strong>{% endif %}</p>
+          {% if page.authors %}<p>{{ page.authors | escape }}</p>{% endif %}
         {% elsif page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
@@ -47,7 +51,12 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
 
-        {% if page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}
+        {% if page.collection == 'publications' %}
+          <p>{{ page.excerpt | escape }}</p>
+          {% if page.contribution %}<p><strong>My contribution:</strong> {{ page.contribution | escape }}</p>{% endif %}
+          {% include publication-links.html paper=page %}
+          {% include publication-figure.html paper=page %}
+        {% elsif page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}
           <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
         {% elsif page.citation and page.paperurl and page.slidesurl %}
           <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>

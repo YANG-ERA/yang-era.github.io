@@ -4,7 +4,7 @@
     "email": "jiyuanyang@sjtu.edu.cn",
     "phone": "",
     "website": "https://yang-era.github.io",
-    "summary": "First-year Ph.D. student in Statistics at the School of Mathematical Sciences, Shanghai Jiao Tong University. Research interests include spatial transcriptomics, high-dimensional omics data analysis, dimension reduction, clustering, simulation, benchmarking, and statistical learning for biomedical data.",
+    "summary": "Second-year Ph.D. student in the Department of Statistics, School of Mathematical Sciences, Shanghai Jiao Tong University. Research interests include spatial transcriptomics, high-dimensional omics data analysis, dimension reduction, clustering, simulation, benchmarking, and statistical learning for biomedical data.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -104,23 +104,30 @@
     {
       "name": "STCC enhances spatial domain detection through consensus clustering of spatial transcriptomics data",
       "publisher": "Genome Research",
-      "releaseDate": "2025-06-01",
+      "releaseDate": "2025-05-12",
       "website": "https://doi.org/10.1101/gr.280031.124",
       "summary": "Consensus clustering for spatial domain detection."
     },
     {
       "name": "Spider: a flexible and unified framework for simulating spatial transcriptomics data",
       "publisher": "Bioinformatics",
-      "releaseDate": "2026-01-02",
+      "releaseDate": "2025-11-14",
       "website": "https://doi.org/10.1093/bioinformatics/btaf562",
       "summary": "A flexible simulation framework for spatial transcriptomics benchmarking."
     },
     {
       "name": "Castl: robust identification of spatially variable genes in spatial transcriptomics via an ensemble-based framework",
       "publisher": "Briefings in Bioinformatics",
-      "releaseDate": "2026-03-01",
+      "releaseDate": "2026-03-06",
       "website": "https://doi.org/10.1093/bib/bbag074",
       "summary": "Ensemble-based spatially variable gene detection."
+    },
+    {
+      "name": "CellPatch: a flexible and efficient framework for single-cell foundation models empowered by heuristic gene patching",
+      "publisher": "Genome Biology",
+      "releaseDate": "2026-10-30",
+      "website": "https://doi.org/10.1186/s13059-026-04329-y",
+      "summary": "A lightweight single-cell foundation model that uses cross-attention to compress gene expression into learned patches. Co-first author."
     }
   ],
   "presentations": [],
