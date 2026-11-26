@@ -7,9 +7,6 @@
       <cite>{{ paper.venue | escape }}</cite> &middot; {{ paper.year | default: publication_year }}{% if paper.role %} &middot; <strong>{{ paper.role | escape }}</strong>{% endif %}
     </p>
     <p>{{ paper.excerpt | escape }}</p>
-    {% if paper.contribution %}
-      <p><strong>My contribution:</strong> {{ paper.contribution | escape }}</p>
-    {% endif %}
     {% include publication-links.html paper=paper %}
   </div>
   {% include publication-figure.html paper=paper %}

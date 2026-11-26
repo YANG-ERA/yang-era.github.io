@@ -53,8 +53,7 @@ layout: default
 
         {% if page.collection == 'publications' %}
           <p>{{ page.excerpt | escape }}</p>
-          {% if page.contribution %}<p><strong>My contribution:</strong> {{ page.contribution | escape }}</p>{% endif %}
-          {% include publication-links.html paper=page %}
+          {% include publication-links.html paper=page figure_credits=true %}
           {% include publication-figure.html paper=page %}
         {% elsif page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}
           <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
