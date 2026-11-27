@@ -7,6 +7,7 @@ excerpt: >-
   CellPatch is a lightweight foundation model for single-cell gene expression. We use cross-attention to summarize a variable number of expressed genes into a fixed set of learned patches, reducing the amount of computation needed for training and fine-tuning. The model supports different decoders, and we evaluated it on cell-type annotation, spatial domain detection, and gene-expression response prediction after perturbation. The attention weights can also be inspected to see which genes contribute to each patch.
 date: 2026-10-30
 venue: "Genome Biology"
+role: "Co-first author"
 authors: "Hanwen Zhu, Yushun Yuan, Jiyuan Yang, Kangwen Cai, Nana Wei, Senxin Zhang, Lu Wang, Wen-Jie Jiang, Yuanchen Sun, An Liu, Futing Lai, Yu-Juan Wang, Zeyu Ma, Xiaoqi Zheng, Hua-Jun Wu"
 paperurl: "https://doi.org/10.1186/s13059-026-04329-y"
 codeurl: "https://github.com/HanwenZhu98/CellPatch"
